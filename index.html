@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>مطبخ بيانو | حلويات وكيك منزلي - الناصرية</title>
+    <meta name="description" content="مطبخ بيانو - من مطبخي الصغير احضّر حلمي الكبير. كيك، كليجة، كوكيز وقوالب مناسبات منزلية الصنع في الناصرية، الشطرة. اطلب الآن عبر واتساب.">
+    <meta name="keywords" content="مطبخ بيانو, كيك الناصرية, حلويات الشطرة, كليجة, كوكيز, قوالب كيك, حلويات منزلية العراق">
+    <meta property="og:title" content="مطبخ بيانو | حلويات وكيك منزلي">
+    <meta property="og:description" content="من مطبخي الصغير احضّر حلمي الكبير — كيك وكليجة وكوكيز طازجة، اطلب عبر واتساب.">
+    <meta property="og:image" content="assets/logo.png">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-logo"><img src="assets/logo.png" alt="شعار مطبخ بيانو"></div>
+        <div class="loader-text">مطبخ بيانو</div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- MOBILE NAV -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="القائمة الرئيسية للجوال">
+        <div class="mobile-nav-top">
+            <div class="brand"><div class="brand-logo"><img src="assets/logo.png" alt="شعار مطبخ بيانو"></div><span class="brand-name display">مطبخ بيانو</span></div>
+            <button class="icon-btn" id="closeMobileNav" aria-label="إغلاق القائمة">✕</button>
+        </div>
+        <ul>
+            <li><a href="#home" class="mobile-link">الرئيسية</a></li>
+            <li><a href="#about" class="mobile-link">من نحن</a></li>
+            <li><a href="#menu" class="mobile-link">المنيو</a></li>
+            <li><a href="#location" class="mobile-link">موقعنا</a></li>
+            <li><a href="#contact" class="mobile-link">تواصل معنا</a></li>
+        </ul>
+        <button class="btn btn-primary cart-btn" id="mobileCartBtn" style="justify-content:center;">
+            🛒 عرض السلة <span class="cart-badge" id="mobileCartBadge">0</span>
+        </button>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="siteHeader">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-logo"><img src="assets/logo.png" alt="شعار مطبخ بيانو"></div>
+                <div class="brand-name display">مطبخ بيانو<small>PIANO KITCHEN</small></div>
+            </div>
+            <nav aria-label="القائمة الرئيسية">
+                <ul>
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#menu" class="nav-link">المنيو</a></li>
+                    <li><a href="#location" class="nav-link">موقعنا</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="تبديل الوضع الداكن">🌙</button>
+                <button class="icon-btn cart-btn" id="cartBtn" aria-label="عرض السلة">🛒<span class="cart-badge" id="cartBadge">0</span></button>
+                <a href="#" class="btn btn-primary" id="headerWaBtn">تواصل معنا</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal in">
+                <div class="hero-eyebrow"><span class="dot"></span> مطبخ منزلي · الناصرية - الشطرة</div>
+                <h1>من مطبخي الصغير<br>احضّر <span>حلمي</span> الكبير 🍰</h1>
+                <p class="lead">كيك طازج، كليجة بيتية، وكوكيز مخبوزة بحب — كل قطعة من مطبخ بيانو تُحضّر بعناية يدوية لتصل إليك طازجة ولذيذة.</p>
+                <div class="hero-ctas">
+                    <a href="#menu" class="btn btn-primary">استكشف المنيو 🍽️</a>
+                    <a href="#" class="btn btn-outline" id="heroWaBtn">اطلب الآن عبر واتساب</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat"><b>5</b><span>تصنيفات حلويات</span></div>
+                    <div class="hero-stat"><b>20+</b><span>صنف متنوع</span></div>
+                    <div class="hero-stat"><b>100%</b><span>صنع منزلي</span></div>
+                </div>
+            </div>
+            <div class="hero-visual reveal in">
+                <div class="hero-blob">
+                    <div class="hero-logo-wrap"><img src="assets/logo.png" alt="شعار مطبخ بيانو"></div>
+                </div>
+                <div class="float-badge b1">🎂 كيك طازج يوميًا</div>
+                <div class="float-badge b2">📍 توصيل داخل الشطرة</div>
+            </div>
+        </div>
+        <div class="scroll-cue"><span>مرر للأسفل</span><div class="line"></div></div>
+    </section>
+
+    <div class="piano-divider" id="pianoDivider1"></div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-media reveal">
+                <div class="about-frame"><img src="assets/logo.png" alt="شعار مطبخ بيانو"></div>
+            </div>
+            <div class="about-text reveal">
+                <span class="section-tag">🧁 من نحن</span>
+                <h2 class="section-title">قصة مطبخ بيانو</h2>
+                <p>بدأت الحكاية من مطبخ صغير في البيت، بشغف بالخَبز وحب تفاصيل الحلا. كل قطعة كيك، وكل كليجة، تُصنع يدويًا بمكونات مختارة بعناية — لأن الحلم الكبير يبدأ دائمًا من مكان صغير.</p>
+                <p>نحرص أن تصل حلوياتنا إليك طازجة، بمذاق بيتي أصيل، وبتصاميم تليق بمناسباتك الخاصة.</p>
+                <div class="about-points">
+                    <div class="about-point"><div class="ic">🍰</div><div><strong>كيك بالطلب</strong><span>أحجام وأشكال متعددة</span></div></div>
+                    <div class="about-point"><div class="ic">🥮</div><div><strong>كليجة بيتية</strong><span>تمر، حلقوم، جوز وفستق</span></div></div>
+                    <div class="about-point"><div class="ic">🍪</div><div><strong>كوكيز طازج</strong><span>كلاسيك ومحشي ومميز</span></div></div>
+                    <div class="about-point"><div class="ic">💬</div><div><strong>طلب سهل</strong><span>مباشرة عبر واتساب</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="piano-divider" id="pianoDivider2"></div>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <span class="section-tag">🍽️ المنيو</span>
+            <h2 class="section-title">اختر حلاك المفضل</h2>
+            <p class="section-sub">قائمة متكاملة من الكيك والكليجة والكوكيز — الأسعار بالدينار العراقي، اضغط على أي صنف لطلبه مباشرة عبر واتساب.</p>
+
+            <div class="menu-filters" id="menuFilters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="cake">قسم الكيك</button>
+                <button class="filter-btn" data-filter="slice">قطع الكيك</button>
+                <button class="filter-btn" data-filter="mold">قوالب كيك</button>
+                <button class="filter-btn" data-filter="kleicha">الكليجة</button>
+                <button class="filter-btn" data-filter="cookies">الكوكيز</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid"></div>
+
+            <div class="menu-note">⚠️ <span>ملاحظة: يختلف سعر قوالب الكيك عند إضافة عجينة السكر أو الصورة السكرية. للاستفسار عن التفاصيل والطلبات الخاصة تواصل معنا مباشرة عبر واتساب.</span></div>
+        </div>
+    </section>
+
+    <div class="piano-divider" id="pianoDivider3"></div>
+
+    <!-- LOCATION -->
+    <section class="location" id="location">
+        <div class="container location-grid">
+            <div class="location-card reveal">
+                <span class="section-tag">📍 موقعنا</span>
+                <h2 class="section-title" style="margin-bottom:26px;">وين نلكاك</h2>
+                <div class="info-row">
+                    <div class="ic">📍</div>
+                    <div><strong>العنوان</strong><span>الناصرية - الشطرة - الشوملي - قرب المربعة</span></div>
+                </div>
+                <div class="info-row">
+                    <div class="ic">💬</div>
+                    <div><strong>واتساب</strong><a href="#" id="locationWaBtn">07809957512</a></div>
+                </div>
+                <div class="info-row">
+                    <div class="ic">📷</div>
+                    <div><strong>انستغرام</strong><a href="https://instagram.com/9ryan_c" target="_blank" rel="noopener">9ryan_c@</a></div>
+                </div>
+            </div>
+            <div class="map-visual reveal">
+                <div class="pin"><span>📍</span></div>
+                <h3>مطبخ بيانو</h3>
+                <p>الناصرية، الشطرة، الشوملي، قرب المربعة</p>
+                <a href="#" class="btn" style="background:#fff;color:var(--primary-dark);" id="mapBtn">فتح في خرائط قوقل ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="piano-divider" id="pianoDivider4"></div>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-card reveal">
+                <h2 class="display">جاهزين نحضّر حلاك؟ 🍮</h2>
+                <p>راسلينا عبر واتساب لطلب كيك مناسبتك، أو أي صنف من المنيو — نرد بسرعة ونجهز طلبك بعناية.</p>
+                <div class="contact-actions">
+                    <a href="#" class="btn btn-primary" id="contactWaBtn">💬 راسلنا على واتساب</a>
+                    <a href="https://instagram.com/9ryan_c" target="_blank" rel="noopener" class="btn btn-outline">📷 تابعنا على انستغرام</a>
+                </div>
+                <div class="social-row">
+                    <a href="#" id="socialWa" aria-label="واتساب">💬</a>
+                    <a href="https://instagram.com/9ryan_c" target="_blank" rel="noopener" aria-label="انستغرام">📷</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand"><div class="brand-logo"><img src="assets/logo.png" alt="شعار مطبخ بيانو"></div><span>مطبخ بيانو</span></div>
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#menu">المنيو</a>
+                <a href="#location">موقعنا</a>
+                <a href="#contact">تواصل معنا</a>
+            </div>
+            <div class="footer-bottom">© 2026 مطبخ بيانو — جميع الحقوق محفوظة</div>
+        </div>
+    </footer>
+
+    <!-- CART OVERLAY -->
+    <div class="overlay" id="cartOverlay"></div>
+
+    <!-- CART DRAWER -->
+    <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات">
+        <div class="cart-head">
+            <h3>🛒 سلة المشتريات</h3>
+            <button class="icon-btn" id="closeCart" aria-label="إغلاق السلة">✕</button>
+        </div>
+        <div class="cart-body" id="cartBody"></div>
+        <div class="cart-foot" id="cartFoot" style="display:none;">
+            <div class="cart-total-row"><span>الإجمالي</span><span id="cartTotal">0 د.ع</span></div>
+            <button class="btn btn-primary" id="checkoutBtn">إتمام الطلب →</button>
+        </div>
+    </aside>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-backdrop" id="checkoutBackdrop"></div>
+        <div class="checkout-box">
+            <button class="checkout-close" id="closeCheckout" aria-label="إغلاق">✕</button>
+            <h3>تأكيد الطلب 📋</h3>
+            <p class="hint">أكملي بياناتك وراح نأكد طلبك مباشرة على واتساب</p>
+
+            <div class="checkout-summary" id="checkoutSummary"></div>
+
+            <form id="checkoutForm" novalidate>
+                <div class="form-group" id="grp-name">
+                    <label>الاسم الكامل <span class="req">*</span></label>
+                    <input type="text" id="custName" placeholder="مثال: زينب علي" autocomplete="name">
+                    <div class="form-error">الرجاء إدخال الاسم</div>
+                </div>
+                <div class="form-group" id="grp-phone">
+                    <label>رقم الهاتف <span class="req">*</span></label>
+                    <input type="tel" id="custPhone" placeholder="07xxxxxxxxx" autocomplete="tel" inputmode="tel">
+                    <div class="form-error">الرجاء إدخال رقم هاتف صحيح</div>
+                </div>
+                <div class="form-group" id="grp-gov">
+                    <label>المحافظة <span class="req">*</span></label>
+                    <select id="custGov">
+                        <option value="">اختر المحافظة</option>
+                        <option value="ذي قار" selected>ذي قار</option>
+                        <option value="بغداد">بغداد</option>
+                        <option value="البصرة">البصرة</option>
+                        <option value="ميسان">ميسان</option>
+                        <option value="المثنى">المثنى</option>
+                        <option value="واسط">واسط</option>
+                        <option value="القادسية">القادسية</option>
+                        <option value="النجف">النجف</option>
+                        <option value="كربلاء">كربلاء</option>
+                        <option value="بابل">بابل</option>
+                        <option value="ديالى">ديالى</option>
+                        <option value="الأنبار">الأنبار</option>
+                        <option value="صلاح الدين">صلاح الدين</option>
+                        <option value="كركوك">كركوك</option>
+                        <option value="نينوى">نينوى</option>
+                        <option value="أربيل">أربيل</option>
+                        <option value="دهوك">دهوك</option>
+                        <option value="السليمانية">السليمانية</option>
+                    </select>
+                    <div class="form-error">الرجاء اختيار المحافظة</div>
+                </div>
+                <div class="form-group" id="grp-address">
+                    <label>عنوان المنزل / المنطقة <span class="req">*</span></label>
+                    <input type="text" id="custAddress" placeholder="مثال: الشطرة - حي الزهراء">
+                    <div class="form-error">الرجاء إدخال العنوان</div>
+                </div>
+                <div class="form-group" id="grp-landmark">
+                    <label>أقرب نقطة دالّة <span class="req">*</span></label>
+                    <input type="text" id="custLandmark" placeholder="مثال: قرب جامع كذا / مقابل صيدلية كذا">
+                    <div class="form-error">الرجاء إدخال أقرب نقطة دالة</div>
+                </div>
+                <div class="form-group">
+                    <label>ملاحظات إضافية (اختياري)</label>
+                    <textarea id="custNotes" placeholder="أي تفاصيل تحبين تضيفينها عن الطلب..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">تأكيد الطلب عبر واتساب 💬</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FLOATING BUTTONS -->
+    <a href="#" class="floating-wa" id="floatingWaBtn" aria-label="طلب عبر واتساب">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.67c2.24 0 4.35.87 5.93 2.46a8.23 8.23 0 0 1 2.43 5.87c0 4.58-3.73 8.31-8.31 8.31-1.44 0-2.86-.37-4.1-1.08l-.29-.17-3.11.82.83-3.04-.19-.31a8.26 8.26 0 0 1-1.27-4.4c0-4.58 3.73-8.31 8.32-8.31zm-4.16 4.6c-.17 0-.44.06-.67.31s-.88.86-.88 2.1.9 2.43 1.02 2.6c.13.17 1.76 2.8 4.38 3.82 2.18.85 2.62.68 3.1.64.48-.04 1.53-.62 1.75-1.23s.22-1.11.15-1.23c-.07-.11-.24-.17-.5-.3s-1.53-.75-1.77-.84c-.24-.08-.41-.12-.59.13-.17.24-.67.83-.82 1-.15.17-.3.19-.56.06-.26-.13-1.09-.4-2.08-1.28-.77-.68-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.11-.11.26-.3.39-.44.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.07-.13-.59-1.47-.82-2.01-.21-.51-.43-.44-.59-.45z"/></svg>
+    </a>
+    <a href="#home" class="back-top" id="backTop" aria-label="العودة للأعلى">↑</a>
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+                                                                                         </html>
